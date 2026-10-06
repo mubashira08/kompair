@@ -20,3 +20,10 @@
 - **Error:** `npm error code ENOENT ... open 'C:\Users\mubas\OneDrive\kompair\package.json'`
 - **Cause:** You ran `npm run dev` in the root `kompair` directory, but the project is split into separate `frontend` and `backend` folders, so there is no `package.json` at the root.
 - **Fix:** Run `cd backend` before running `npm run dev` (and open a second terminal to run `cd frontend && npm run dev` for the frontend).
+
+## Task 6
+- **File:** `C:\Users\mubas\OneDrive\kompair\frontend\src\pages\MainPage.tsx`
+- **Line Number:** 45
+- **Error:** `[PARSE_ERROR] Expected corresponding JSX closing tag for 'div'.`
+- **Cause:** I opened a new `<div>` to group the toggle elements next to the ScoreBadge, but forgot to add the corresponding `</div>` before the closing `</header>` tag.
+- **Fix:** Added the missing `</div>` to properly close the parent layout element.
